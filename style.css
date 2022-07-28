@@ -464,6 +464,7 @@ p {
 .copy-icons > ul > li > a > i {
   background-color: black;
 
+  padding-right: 0px;
   padding: 15px;
   margin: 5px;
   margin-top: 0px;
@@ -632,7 +633,6 @@ p {
     margin-left: auto;
   }
 }
-
 @media screen and (max-width: 1380px) {
   .copy-text {
     padding-right: 31%;
@@ -652,6 +652,20 @@ p {
     padding-right: 0px;
   }
 }
+@media screen and (max-width: 1390px) {
+  .copy-icons {
+    flex: 0.42;
+    box-sizing: border-box;
+    padding-right: 60px;
+  }
+}
+@media screen and (max-width: 997px) {
+  .copyright {
+    flex: 0.42;
+    box-sizing: border-box;
+    padding-right: 60px;
+  }
+}
 @media screen and (max-width: 990px) {
   .footer-right {
     align-self: flex-start;
@@ -663,7 +677,6 @@ p {
     padding-left: 100px;
     margin-left: 0px;
   }
-
   .footer-right img {
     padding: 5px 60px;
     padding-left: 0px;
@@ -703,6 +716,7 @@ p {
 }
 @media screen and (max-width: 768px) {
   .footer {
+    display: grid;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -745,10 +759,11 @@ p {
     margin: 0;
   }
   .copyright {
-    justify-content: flex-start;
-    align-items: flex-start;
+    display: grid;
+    flex: 0.3;
     padding-left: 0;
     margin: 0;
+    margin-left: -50px;
   }
   .copy-text {
     padding-right: 0;
@@ -761,7 +776,7 @@ p {
     margin-right: 0;
     padding-left: 0;
     margin-left: 0;
-    align-self: flex-start;
+    align-self: center;
     padding-bottom: 15px;
   }
   .copy-icons > ul > li > a > i {
@@ -794,7 +809,6 @@ p {
     font-size: 9px;
   }
 }
-
 @media screen and (max-width: 525px) {
   .ratings {
     flex-direction: column;
@@ -810,5 +824,14 @@ p {
     box-sizing: border-box;
     padding: 10px;
     padding-left: 30px;
+    padding-bottom: 20px;
+  }
+  .footer-left,
+  .footer-right,
+  .footer-med {
+    padding-left: 30px;
+  }
+  .copyright {
+    padding-left: 80px;
   }
 }

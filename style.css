@@ -803,3 +803,12 @@ p {
     flex: 1;
   }
 }
+@media screen and (max-width: 900px) {
+  .footer,
+  .copyright {
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 10px;
+    padding-left: 30px;
+  }
+}

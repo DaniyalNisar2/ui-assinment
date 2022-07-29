@@ -883,6 +883,14 @@ p {
     min-width: 80%;
   }
 }
+@media screen and (max-width: 1327px) {
+  .latest-cards {
+    margin: auto;
+    min-width: 98%;
+    width: 98%;
+  }
+}
+
 @media screen and (min-width: 1406px) {
   .break-c {
     flex-basis: 100%;

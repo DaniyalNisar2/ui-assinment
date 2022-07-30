@@ -86,10 +86,12 @@ nav .fa-bars {
   font-size: 25px;
   color: rgb(63, 172, 228);
 }
+
 .fa-bars:hover {
   cursor: pointer;
   color: rgb(0, 102, 255);
 }
+
 .menu > a {
   padding: 39px 15px;
   text-decoration: none;
@@ -100,31 +102,8 @@ nav .fa-bars {
 .menu > a:hover {
   color: rgb(63, 172, 228);
 }
-.menu2 > a {
-  padding: 10px 15px;
-  display: block;
-  text-decoration: none;
-  color: black;
-  font-weight: 500;
-  font-size: 12px;
-  border-bottom: 1px solid rgb(211, 208, 208);
-}
-
-.menu2 > a:hover {
-  color: rgba(63, 172, 228, 0.5);
-}
-
-.menu2 {
+.outer-menu2 a {
   display: none;
-  position: absolute;
-  background-color: white;
-  border: 1px solid rgb(211, 208, 208);
-  border-radius: 5px;
-  min-width: 5px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  padding: 12px 16px;
-  opacity: 0.7;
-  margin-left: -100px;
 }
 
 .banner {
@@ -636,10 +615,56 @@ p {
   .menu > a {
     display: none;
   }
-  i {
-    display: block !important;
+  nav .fa-bars {
+    display: block;
     margin-right: -15%;
+    z-index: 2;
   }
+
+  .menu2 > a {
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    border-width: 100%;
+    /* border-bottom: 1px solid rgb(211, 208, 208); */
+  }
+  .menu2 > a:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+  }
+
+  .outer-menu2 {
+    display: none;
+    position: fixed;
+    top: 0;
+    background-color: rgba(65, 106, 221, 0.5);
+
+    min-width: 100vw;
+    /* opacity: 0.5; */
+    height: 100%;
+
+    box-sizing: border-box;
+  }
+
+  .menu2 {
+    position: absolute;
+    background-color: rgb(60, 172, 228);
+    border: 1px solid rgb(211, 208, 208);
+    border-radius: 5px;
+    min-width: 190px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 50px;
+
+    height: 100%;
+    opacity: 0.9;
+    z-index: 2;
+    box-sizing: border-box;
+    /* margin-left: -100px; */
+  }
+
   .latest-text > h1 {
     max-width: 500px;
     line-height: 1em;

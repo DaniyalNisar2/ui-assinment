@@ -20,11 +20,22 @@
 
             if (document.getElementById("menu2").style.display == "none") {
                 document.getElementById("menu2").style.display = "block";
+                document.getElementById("bars").style.color = "blue";
             } else {
                 document.getElementById("menu2").style.display = "none";
-            }
-            // document.getElementById("menu2").style.display = "block";
+                document.getElementById("bars").style.color = " rgb(63, 172, 228)";
 
+
+            }
+        }
+
+        function menuoff() {
+
+            if (document.getElementById("menu2").style.display == "block") {
+                document.getElementById("menu2").style.display = "none";
+                document.getElementById("bars").style.color = " rgb(63, 172, 228)";
+
+            }
         }
     </script>
 </head>
@@ -71,24 +82,22 @@
                     <a href="#">ABOUT</a>
                     <a href="#">PAGES</a>
                     <a href="#">CONTACT</a>
-
                 </div>
 
-
-                <i class="fa fa-bars" onclick="menu()">
-                    <div id="menu2" class="menu2">
-                        <a href="#">HOME</a>
-                        <a href="#">PORTFOLIO</a>
-                        <a href="#">ABOUT</a>
-                        <a href="#">PAGES</a>
-                        <a href="#">CONTACT</a>
-                    </div>
+                <i id="bars" class="fa fa-bars" onclick="menu()">
                 </i>
 
-
-
             </nav>
-        </div>
+
+            <div id="menu2" class="outer-menu2" onclick="menuoff()">
+                <div class="menu2">
+                    <a href="#">HOME</a>
+                    <a href="#">PORTFOLIO</a>
+                    <a href="#">ABOUT</a>
+                    <a href="#">PAGES</a>
+                    <a href="#">CONTACT</a>
+                </div>
+            </div>
 
     </header>
 

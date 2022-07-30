@@ -645,7 +645,7 @@ p {
     min-width: 100vw;
     /* opacity: 0.5; */
     height: 100%;
-
+    z-index: 3;
     box-sizing: border-box;
   }
 

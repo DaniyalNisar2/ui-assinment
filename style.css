@@ -932,11 +932,17 @@ p {
 }
 
 .preloader {
-  background: #000 url(logo.gif) no-repeat center;
   top: 0;
-
+  background: black;
   height: 100vh;
   width: 100%;
   position: fixed;
   z-index: 100;
+}
+
+.preloader > img {
+  width: 150px;
+  display: block;
+  margin: auto;
+  margin-top: 300px;
 }

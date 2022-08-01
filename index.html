@@ -101,7 +101,10 @@
             </div>
 
     </header>
+    <div class="preloader" id="preloader">
 
+        <p style="color:white; margin-top:55%;">Daniyal is Loading...</p>
+    </div>
     <div class="banner">
         <div class="banner-text">
             <h1>
@@ -456,9 +459,16 @@
     </footer>
 
 
+    <script>
+        setTimeout(() => {
+            const loader = document.getElementById('preloader');
 
 
+            loader.style.display = 'none';
 
+
+        }, 3000);
+    </script>
 
 </body>
 

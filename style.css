@@ -930,3 +930,13 @@ p {
     margin: auto;
   }
 }
+
+.preloader {
+  background: #000 url(logo.gif) no-repeat center;
+  top: 0;
+
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
